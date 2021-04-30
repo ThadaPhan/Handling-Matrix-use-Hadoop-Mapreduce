@@ -106,13 +106,8 @@
 
 ## ***BUILD***
 
-* Step 1: Give permission for execute files:
-  * *chmod +x Demo1/Build.sh Demo2/Build.sh Demo3/Build.sh Demo4/Build.sh createData.sh run.sh*
-* Step 2: Execute all demo:
-  * *run.sh*
-  * After execute run.sh command, you must
-   * Type number of column and row of M, N Matrix (column M = row N)
-   * Hit Enter to continue when screen stop to show result
+* Give permission for execute files: *chmod +x Demo1/Build.sh Demo2/Build.sh Demo3/Build.sh Demo4/Build.sh createData.sh run.sh*
+
 
 ## ***RUN ALL DEMO***
 
