@@ -96,38 +96,42 @@
    </table>
    
     * A execute file used to create any matrix you want: createData.sh
-    * A execute to run all 
+    * A execute file to run all demo: run.sh 
   
- * data.txt: list of students receiving encourage learning scholarships in HCMUTE from 2018 to 2020.
 
 
 ## ***INSTALLATION***
 
-* You can install this project in [WordCount with Hadoop](https://github.com/ThadaPhan/WordCount-with-Hadoop.git)
+* You can install this project in [Handling-Matrix-with-Hadoop](https://github.com/ThadaPhan/Handling-Matrix-with-Hadoop.git)
 
 ## ***BUILD***
 
-* Step 1: Create a operation direction:
-  * *mkdir operation*
-* Step 2: Compiling the program in particular folder named as operation/:
-  * *javac -cp $HADOOP_HOME/share/hadoop/common/hadoop-common-2.7.7.jar:$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.7.jar:operation/:. -d operation map.java*
-  * *javac -cp $HADOOP_HOME/share/hadoop/common/hadoop-common-2.7.7.jar:$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.7.jar:operation/:. -d operation reduce.java*
-  * *javac -cp $HADOOP_HOME/share/hadoop/common/hadoop-common-2.7.7.jar:$HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.7.7.jar:operation/:. -d operation runner.java*
-* Step 3: Create WordCount.jar file:
-  * *jar -cvf WordCount.jar -C operation/ .*
+* Step 1: Give permission for execute files:
+  * *chmod +x Demo1/Build.sh Demo2/Build.sh Demo3/Build.sh Demo4/Build.sh createData.sh run.sh*
+* Step 2: Execute all demo:
+  * *run.sh*
+  * After execute run.sh command, you must
+   * Type number of column and row of M, N Matrix (column M = row N)
+   * Hit Enter to continue when screen stop to show result
 
-  Now, you have a WordCount jar file with name *WordCount.jar*
-
-## ***DEMO***
+## ***RUN ALL DEMO***
 
 * Step by step:
-  * Step 1: Create input direction in HDFS:
-    * *hdfs dfs -mkdir -p input*
-  * Step 2: Put data.txt file into input in HDFS:
-    * *hdfs dfs -put data.txt input*
-  * Step 3: Demo WordCount
-    * *hadoop jar WordCount.jar PackageDemo.runner input output*
-  * Step 4: Show result
-    * *hdfs dfs -cat output/part-00000*
-* Instructional video: [Demo WordCount with Hadoop](youtu.be/dN8gNwBmy34)
-
+  * Step 1: Run command:
+    * *run.sh*
+  * Step 2: Type row number of M matrix:
+    * Row of M matrix:
+      
+      4
+  * Step 3: Type column number of M matrix = row number of N matrix:
+    * Column of M matrix:
+    
+      3
+  * Step 4: TYpe column number of N matrix:
+    * Column of N matrix:
+ 
+      5
+   * When srcreen stop to show input and ouput of every demo, you must hit "enter" to continue.
+## ***EDIT DEMO***
+* If you want to edit any demo your way, you can. But after edit, you have to rebuild jar file of demo you edit by run: *./Build.sh*
+## ***GOOD LUCK :))***
