@@ -2,7 +2,7 @@
 
 ## ***INTRODUCTION***
 * This project include:
-    * 4 demo handing matrix:
+    * 4 demo handing matrix in src directory:
     <table>
     <tr>
         <td>Name</td>
@@ -128,5 +128,5 @@
       5
    * When srcreen stop to show input and ouput of every demo, you must hit "enter" to continue.
 ## ***EDIT DEMO***
-* If you want to edit any demo your way, you can. But after edit, you have to rebuild jar file of demo you edit by run: *./Build.sh*
+* If you want to edit any demo your way, let go to src dirctory, you can see 4 demo directory in it. But after edit, you have to rebuild jar file of demo you edit by run: *./Build.sh*
 ## ***GOOD LUCK :))***
